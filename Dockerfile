@@ -1,6 +1,4 @@
-FROM microsoft/windowsservercore:1803
-
-MAINTAINER yamlcase (at) pixpan.com
+FROM microsoft/windowsservercore:ltsc2016
 
 # Make Chocolately installation/use compatible with docker for windows https://github.com/chocolatey/choco/issues/1055
 ENV chocolateyUseWindowsCompression false
