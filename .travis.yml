@@ -8,6 +8,6 @@ if: branch = master
 script:
 # - powershell set-executionpolicy unrestricted
   - docker build -t "zeiban/steamcmd-wincore-ltsc2016" .
-  - docker tag zeiban/steamcmd-wincore-ltsc2016 "zeiban/steamcmd-wincore-ltsc2016:$TRAVIS_BUILD_NUMBER"
-  - echo "$docker_password" | docker login -u "$docker_username" --password-stdin
-  - docker push "zeiban/steamcmd-wincore-ltsc2016"
+#  - docker tag zeiban/steamcmd-wincore-ltsc2016 "zeiban/steamcmd-wincore-ltsc2016:$TRAVIS_BUILD_NUMBER"
+#  - echo "$docker_password" | docker login -u "$docker_username" --password-stdin
+#  - docker push "zeiban/steamcmd-wincore-ltsc2016"
